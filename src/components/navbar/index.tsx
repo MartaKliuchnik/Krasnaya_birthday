@@ -26,14 +26,19 @@ function Navbar({ isTopOfPage, selecledPage, setSelectedPage }: Props) {
 				<div className={`${flexBetween} mx-auto w-5/6`}>
 					<div className={`${flexBetween} w-full gap-16`}>
 						{/* LEFT SIDE */}
-						<img className='w-40' src={Logo} alt='logo' />
+						{/* <img className='w-40' src={Logo} alt='logo' /> */}
 
 						{/* RIGHT SIDE */}
 						{isAboutMediumScreens ? (
 							<div className={`${flexBetween} w-full`}>
 								<div className={`${flexBetween} gap-8 text-sm`}>
 									<Link
-										page='History'
+										page='Home'
+										selecledPage={selecledPage}
+										setSelectedPage={setSelectedPage}
+									/>
+									<Link
+										page='About'
 										selecledPage={selecledPage}
 										setSelectedPage={setSelectedPage}
 									/>
@@ -77,7 +82,12 @@ function Navbar({ isTopOfPage, selecledPage, setSelectedPage }: Props) {
 					{/* MENU ITEMS */}
 					<div className='ml-[33%] flex flex-col gap-10 text-2xl'>
 						<Link
-							page='History'
+							page='Home'
+							selecledPage={selecledPage}
+							setSelectedPage={setSelectedPage}
+						/>
+						<Link
+							page='About'
 							selecledPage={selecledPage}
 							setSelectedPage={setSelectedPage}
 						/>
