@@ -26,7 +26,7 @@ function Navbar({ isTopOfPage, selecledPage, setSelectedPage }: Props) {
 				<div className={`${flexBetween} mx-auto w-5/6`}>
 					<div className={`${flexBetween} w-full gap-16`}>
 						{/* LEFT SIDE */}
-						{/* <img className='w-40' src={Logo} alt='logo' /> */}
+						<img className='w-40' src={Logo} alt='logo' />
 
 						{/* RIGHT SIDE */}
 						{isAboutMediumScreens ? (

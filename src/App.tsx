@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import { SelectedPage } from './shared/types';
 import Home from './components/home';
 import About from './components/about';
+import MyCompliments from './components/myCompliments';
+import Footer from './components/footer';
 
 function App() {
 	const [selecledPage, setSelectedPage] = useState<SelectedPage>(
@@ -31,6 +33,8 @@ function App() {
 			/>
 			<Home setSelectedPage={setSelectedPage} />
 			<About setSelectedPage={setSelectedPage} />
+			<MyCompliments setSelectedPage={setSelectedPage} />
+			<Footer />
 		</div>
 	);
 }

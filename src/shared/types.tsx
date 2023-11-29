@@ -10,3 +10,9 @@ export interface AboutType {
 	title: string;
 	description: string;
 }
+
+export interface ComplimentType {
+	name: string;
+	description: string;
+	image: string;
+}
