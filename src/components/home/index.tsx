@@ -20,7 +20,8 @@ const Home = ({ setSelectedPage }: Props) => {
 	return (
 		<section
 			id='home'
-			className='gap-16 bg-gray-20 py-10 xs:h-[60rem] md:h-full md:pb-0'
+			// className='gap-16 bg-gray-20 py-10 xs:h-[60rem] md:h-full md:pb-0'
+			className='bg-gray-20 pt-20'
 		>
 			{/* IMAGE AND MAIN PAGE */}
 			<motion.div
@@ -28,7 +29,7 @@ const Home = ({ setSelectedPage }: Props) => {
 				className='md:flex mx-auto w-5/6 items-center justify-center md:h-5/6'
 			>
 				{/* MAIN HEADER */}
-				<div className='z-10 mt-20 ms:basis-3/5 '>
+				<div className='z-10 md:basis-3/5'>
 					{/* HEADINGS */}
 					<motion.div
 						initial='hidden'
@@ -43,8 +44,8 @@ const Home = ({ setSelectedPage }: Props) => {
 					>
 						<div className='relative'>
 							<div
-								className='before:absolute before:-top-20 before:-left-10 before:z-[-1]
-								md:before:content-krasnayatext'
+								className='before:absolute before:-left-10 before:-top-20 before:z-[-1]
+							md:before:content-krasnayatext'
 							>
 								<img
 									// className='md:pb-[20px]'
@@ -86,11 +87,13 @@ const Home = ({ setSelectedPage }: Props) => {
 
 				{/* IMAGE */}
 				<div
-					className='flex basis-3/5 justify-center md:z-10 md:h-[50rem]
-				md:ml-50 md:mt-56 md:justify-items-end'
+					// className='flex basis-3/5 justify-center md:z-10 md:h-[50rem]
+					// md:ml-50 md:mt-56 md:justify-items-end'>
+					className='flex basis-3/5 md:justify-end justify-center md:z-10'
 				>
 					<img
-						className='xs:h-3/4 md:h-[580px]'
+						// className='xs:h-3/4 md:h-[580px]'
+						className='h-[580px] sm:h-[700px]'
 						src={HomePageGraphic}
 						alt='home-page-graphic'
 					/>
@@ -99,33 +102,44 @@ const Home = ({ setSelectedPage }: Props) => {
 
 			{/* SPONSORS */}
 			{/* {isAboveMediumScreens && ( */}
-			<div className='h-[150px] w-full bg-primary-100 xs:py-[20px] sm:py-0 md:py-0'>
-				<div className='mx-auto w-5/6 sm:w-4/6'>
-					<div className='flex w-2/5 items-center justify-between xs:gap-[7%] md:gap-[15%]'>
-						<img
-							className='xs:w-3/5 md:w-[150px] sm:h-[100px] md:h-[150px]'
-							src={MeatSponsor}
-							alt='meet-sponsor'
-						/>
-						<img
-							className='xs:w-3/5 md:w-[150px] md:h-[150px]'
-							src={DrinkSponsor}
-							alt='drink-sponsor'
-						/>
-						<img
-							className='xs:w-3/5 md:w-[150px] md:h-[150px]'
-							src={SewingSponsor}
-							alt='sewing-sponsor'
-						/>
-						<img
-							className='xs:w-3/5 md:w-[150px] md:h-[150px]'
-							src={CarSponsor}
-							alt='car-sponsor'
-						/>
-					</div>
+			<div
+				// className='h-[150px] w-full bg-primary-100 xs:py-[20px] sm:py-0 md:py-0'
+				className='h-[150px] w-full bg-primary-100 flex items-center justify-center'
+			>
+				{/* <div
+						// className='mx-auto w-5/6 sm:w-4/6'
+						className=''
+					> */}
+				<div
+					className='flex h-[100px] sm:h-[130px] md:gap-20'
+					// className='flex w-2/5 items-center content-center xs:gap-[7%] md:gap-[15%]'
+				>
+					<img
+						className='h-[100px] sm:h-[130px]'
+						// className='xs:w-3/5 md:w-[150px] sm:h-[100px] md:h-[150px]'
+						src={MeatSponsor}
+						alt='meet-sponsor'
+					/>
+					<img
+						className='h-[100px] sm:h-[130px]'
+						// className='xs:w-3/5 md:w-[150px] md:h-[150px]'
+						src={DrinkSponsor}
+						alt='drink-sponsor'
+					/>
+					<img
+						className='h-[100px] sm:h-[130px]'
+						// className='xs:w-3/5 md:w-[150px] md:h-[150px]'
+						src={SewingSponsor}
+						alt='sewing-sponsor'
+					/>
+					<img
+						className='h-[100px] sm:h-[130px]'
+						// className='xs:w-3/5 md:w-[150px] md:h-[150px]'
+						src={CarSponsor}
+						alt='car-sponsor'
+					/>
 				</div>
 			</div>
-			{/* )} */}
 		</section>
 	);
 };

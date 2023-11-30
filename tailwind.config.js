@@ -28,7 +28,7 @@ export default {
 				montserrat: ['Montserrat', 'sans-serif'],
 			},
 			screens: {
-				xs: '375px',
+				xs: '640px',
 				sm: '768px',
 				md: '1060px',
 			},
