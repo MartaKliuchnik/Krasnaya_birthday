@@ -21,7 +21,7 @@ const Home = ({ setSelectedPage }: Props) => {
 		<section
 			id='home'
 			// className='gap-16 bg-gray-20 py-10 xs:h-[60rem] md:h-full md:pb-0'
-			className='bg-gray-20 pt-20'
+			className='bg-gray-20 pt-24 sx:pt-24 sm:pt-24 md:pt-20'
 		>
 			{/* IMAGE AND MAIN PAGE */}
 			<motion.div

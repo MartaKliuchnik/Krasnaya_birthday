@@ -1,12 +1,13 @@
 import HText from '@/shared/HText';
 import { SelectedPage, ComplimentType } from '@/shared/types';
 import { motion } from 'framer-motion';
-import image1 from '@/assets/image1.png';
-import image2 from '@/assets/image2.png';
+import image1 from '@/assets/image1.jpeg';
+import image2 from '@/assets/image2.jpeg';
 import image3 from '@/assets/image3.png';
 import image4 from '@/assets/image4.png';
 import image5 from '@/assets/image5.png';
 import image6 from '@/assets/image6.png';
+import image7 from '@/assets/image7.png';
 import Compliment from './Compliment';
 
 type Props = {
@@ -50,6 +51,12 @@ const compliments: Array<ComplimentType> = [
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 		image: image6,
 	},
+	{
+		name: 'Training Classes',
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+		image: image7,
+	},
 ];
 
 const MyCompliments = ({ setSelectedPage }: Props) => {
@@ -77,8 +84,8 @@ const MyCompliments = ({ setSelectedPage }: Props) => {
 					</div>
 				</motion.div>
 
-				<div className='mt-10 h-[353px] w-full oserflow-x-auto overflow-y-hidden'>
-					<ul className='w-[2800px] whitespace-nowrap'>
+				<div className='mt-10 h-[280px] w-full overflow-x-auto overflow-y-hidden'>
+					<ul className='w-[2300px] whitespace-nowrap'>
 						{compliments.map((item: ComplimentType, index) => (
 							<Compliment
 								key={`${item.name}-${index}`}
