@@ -55,10 +55,27 @@ const Home = ({ setSelectedPage }: Props) => {
 							</div>
 						</div>
 
-						<p className='mt-8 text-sm'>
-							Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-							Studios to get the Body Shapes That you Dream of.. Get Your Dream
-							Body Now.
+						<p className='mt-8 text-justify'>
+							Желаю встретить её со своими зубами, с морщинами только от смеха,
+							в трезвом уме и при своей памяти! Пусть вопреки всему кальций не
+							вымывается из костей, волосы не седеют, а нервные клетки
+							восстанавливаются!
+							{/* фонтанировать идеями и будоражить
+							окружающих воплощениями своего творчества в жизнь! Пусть
+							исполняются заветные желанья, и придет удачное завершение начатых
+							дел! И еще немного пожелаю: домашнего тепла, уюта очага, достатка
+							и здоровья, бодрости и свежести, вечной молодости и грандиозного,
+							умопомрачительного счастья! */}
+							{/* Ну что же, вот и настал этот день. Пробежимся немного по цифрам?!
+							Итак, за 10 лет плотного сотрудничества у тобой я узнала, что - */}
+						</p>
+
+						<p className='mt-8 text-justify'>
+							Желаю удачно преодолевать временные пространства, обстоятельства,
+							препятствия и негатив, отчаянно бороться за место под солнцем и
+							побеждать на ринге страсти. Также желаю постоянно увеличивать
+							грузоподъёмность своего кошелька, массажными движениями
+							притягивать к себе богатство.
 						</p>
 					</motion.div>
 
@@ -74,13 +91,13 @@ const Home = ({ setSelectedPage }: Props) => {
 						}}
 						className='mt-8 flex items-center gap-8'
 					>
-						<ActionButton setSelectedPage={setSelectedPage}>Join</ActionButton>
+						{/* <ActionButton setSelectedPage={setSelectedPage}>Join</ActionButton> */}
 						<AnchorLink
 							className='text-sm font-bold text-primary-500 underline hover:text-secondary-500'
-							onClick={() => setSelectedPage(SelectedPage.Moment)}
-							href={`#${SelectedPage.Moment}`}
+							onClick={() => setSelectedPage(SelectedPage.Rewarding)}
+							href={`#${'rewarding'}`}
 						>
-							Learn more
+							Больше информации
 						</AnchorLink>
 					</motion.div>
 				</div>

@@ -33,28 +33,23 @@ function Navbar({ isTopOfPage, selecledPage, setSelectedPage }: Props) {
 							<div className={`${flexBetween} w-full`}>
 								<div className={`${flexBetween} gap-8 text-sm`}>
 									<Link
-										page='Home'
+										page='Главная'
 										selecledPage={selecledPage}
 										setSelectedPage={setSelectedPage}
 									/>
 									<Link
-										page='About'
+										page='Награждение'
 										selecledPage={selecledPage}
 										setSelectedPage={setSelectedPage}
 									/>
 									<Link
-										page='Moment'
-										selecledPage={selecledPage}
-										setSelectedPage={setSelectedPage}
-									/>
-									<Link
-										page='Wish'
+										page='Пожелания'
 										selecledPage={selecledPage}
 										setSelectedPage={setSelectedPage}
 									/>
 								</div>
 								<ActionButton setSelectedPage={setSelectedPage}>
-									Read wish
+									Перейти к поздравлению
 								</ActionButton>
 							</div>
 						) : (
@@ -82,22 +77,17 @@ function Navbar({ isTopOfPage, selecledPage, setSelectedPage }: Props) {
 					{/* MENU ITEMS */}
 					<div className='ml-[33%] flex flex-col gap-10 text-2xl'>
 						<Link
-							page='Home'
+							page='Главная'
 							selecledPage={selecledPage}
 							setSelectedPage={setSelectedPage}
 						/>
 						<Link
-							page='About'
+							page='Награждение'
 							selecledPage={selecledPage}
 							setSelectedPage={setSelectedPage}
 						/>
 						<Link
-							page='Moment'
-							selecledPage={selecledPage}
-							setSelectedPage={setSelectedPage}
-						/>
-						<Link
-							page='Wish'
+							page='Пожелания'
 							selecledPage={selecledPage}
 							setSelectedPage={setSelectedPage}
 						/>

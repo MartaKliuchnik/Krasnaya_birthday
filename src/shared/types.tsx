@@ -1,8 +1,7 @@
 export enum SelectedPage {
-	Home = 'home',
-	About = 'about',
-	Moment = 'moment',
-	Wish = 'wish',
+	Home = 'Главная',
+	Rewarding = 'Награждение',
+	Wish = 'Пожелания',
 }
 
 export interface AboutType {

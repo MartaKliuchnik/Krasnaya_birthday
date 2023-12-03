@@ -7,10 +7,10 @@ import MyCompliments from './components/myCompliments';
 import Footer from './components/footer';
 
 function App() {
-	const [selecledPage, setSelectedPage] = useState<SelectedPage>(
-		SelectedPage.Home
-	);
+	const [selecledPage, setSelectedPage] = useState(SelectedPage.Home);
 	const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
+
+	console.log(selecledPage);
 
 	useEffect(() => {
 		const handleScroll = () => {

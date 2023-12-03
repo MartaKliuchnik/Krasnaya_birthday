@@ -5,7 +5,7 @@ type Props = {
 };
 
 const Compliment = ({ name, description, image }: Props) => {
-	const overlayStyles = `p-5 absolute z-30 flex
+	const overlayStyles = `p-5 absolute z-20 flex
     h-[263px] w-[350px] flex-col items-center justify-center
     whitespace-normal bg-primary-500 text-center text-white
     opacity-0 transition duration-500 hover:opacity-90`;

@@ -22,28 +22,30 @@ const container = {
 const aboutInfo: Array<AboutType> = [
 	{
 		icon: <AcademicCapIcon className='h-6 w-6' />,
-		title: 'Technolog in birth',
+		title: 'Мадам "ТЕХНОЛОГ БРОШКИНА"',
 		description:
-			'Nulla eiusmod dolore minim irure exercitation mollit veniam magna occaecat amet consequat officia culpa.',
-	},
-	{
-		icon: <ScissorsIcon className='h-6 w-6' />,
-		title: 'Sharp Scissors',
-		description:
-			'Nulla eiusmod dolore minim irure exercitation mollit veniam magna occaecat amet consequat officia culpa.',
+			'Повелительница сырого мяса и готовой продукции, с дикой страсть к производству со всеми вытекающими последствиями.',
 	},
 	{
 		icon: <GlobeAltIcon className='h-6 w-6' />,
-		title: 'Frog travel',
+		title: 'Заслуженная "БОГИНЯ ПРИКЛЮЧЕНИЙ"',
 		description:
-			'Nulla eiusmod dolore minim irure exercitation mollit veniam magna occaecat amet consequat officia culpa.',
+			'Лягушка-путешественица, у которой всегда стоит на готове собранный чемоданчик на случай неожиданной поездки.',
+	},
+	{
+		icon: <ScissorsIcon className='h-6 w-6' />,
+		title: 'Мисс "ОСТРЫЕ НОЖНИЧКИ"',
+		description:
+			'Владытчица ниток и иголок, числится в базе данных ГАИ за превышение скорости на швейной машинке.',
 	},
 ];
 
 const About = ({ setSelectedPage }: Props) => {
 	return (
-		<section id='about' className='mx-auto min-h-full w-5/6 py-20'>
-			<motion.div onViewportEnter={() => setSelectedPage(SelectedPage.About)}>
+		<section id='rewarding' className='mx-auto min-h-full w-5/6 py-20'>
+			<motion.div
+				onViewportEnter={() => setSelectedPage(SelectedPage.Rewarding)}
+			>
 				{/* HEADER */}
 				<motion.div
 					initial='hidden'
@@ -54,19 +56,20 @@ const About = ({ setSelectedPage }: Props) => {
 						hidden: { opacity: 0, x: -50 },
 						visible: { opacity: 1, x: 0 },
 					}}
-					className='md:my-3/5 md:w-3/5'
+					className='md:my-3/5 md:w-3/4'
 				>
-					<HText>
-						{/* Немного информации о ней */}
-						More than
-					</HText>
-					<p className='my-5 text-sm'>
-						{/* Красненькая - не просто хороший человек. Она универсальный боец,
-						способный выдержать самые сложные испытания и противостоять любым
-						вызовам. */}
-						Duis consequat consectetur non in et eiusmod elit nisi eu dolore
-						commodo cupidatat excepteur cupidatat. Fugiat magna ipsum veniam ad
-						velit.
+					<HText>Пебедитель года</HText>
+					<p className='my-5 text-justify'>
+						Уже 10 лет мы идем по жизни вместе. Дни и ночи напролет обсуждаем
+						наши победы и неудачи. Мы выпили море чая и озеро крепких спиртных
+						напитков, оплакивая горькие потери и празднуя значимые победы! Ты
+						всегда рядом со мной, и я это очень ценю! За это время я поняла, что
+						ты универсальный боец с безграничными возможностями и огромными
+						амбициями.
+					</p>
+					<p className='my-5 text-center'>
+						<span className='text-primary-500 font-bold'>ТОП НОМИНАЦИЙ</span> в
+						которых тебе нет равных:
 					</p>
 				</motion.div>
 

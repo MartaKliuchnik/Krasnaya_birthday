@@ -7,11 +7,12 @@ type Props = {
 };
 
 const ActionButton = ({ children, setSelectedPage }: Props) => {
+	// console.log(children);
 	return (
 		<AnchorLink
 			className='rounded-md bg-secondary-500 px-10 py-2 hover:bg-primary-500 hover:text-white'
 			onClick={() => setSelectedPage(SelectedPage.Wish)}
-			href={`#${SelectedPage.Wish}`}
+			href={`#${'wish'}`}
 		>
 			{children}
 		</AnchorLink>

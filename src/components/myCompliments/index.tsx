@@ -16,52 +16,54 @@ type Props = {
 
 const compliments: Array<ComplimentType> = [
 	{
-		name: 'Weight Training Classes',
+		name: 'Уверенности',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+			' Пусть глаза твои сияют радостью ярче, чем летние звёзды; пусть твоё женское очарование не знает преград и бьёт наповал, без пощады и предупреждения!',
 		image: image1,
 	},
+
 	{
-		name: 'Yoga Classes',
+		name: 'Везения',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-		image: image2,
-	},
-	{
-		name: 'Ab Core Classes',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-		image: image3,
-	},
-	{
-		name: 'Adventure Classes',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+			'Желаю, чтобы волшебным магнитиком в твою жизнь притягивались чудесные события, увлекательные приключения и замечательные люди.',
 		image: image4,
 	},
+
 	{
-		name: 'Fitness Classes',
+		name: 'Терпения',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-		image: image5,
-	},
-	{
-		name: 'Training Classes',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+			'Красненькая, порхай, как бабочка, жаль, как пчела, веселись, как стрекоза, прыгай к цели, как кузнечик! Не разменивайся на мелочи! Счастья, тебе по самые помидоры и удачи на все случаи жизни!',
 		image: image6,
 	},
 	{
-		name: 'Training Classes',
+		name: 'Любви',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+			'Желаю много-много взаимной и чистой любви! Желаю много-много общения и бесконечных моментов счастья! Чтобы на твои уши не падала лапша, чтобы на твои мозги не капала совесть!',
+		image: image2,
+	},
+	{
+		name: 'Удовлетворения',
+		description:
+			'Пусть дело, которым ты занимаешься, приносит не только зарплату, но и максимальное творческое удовлетворение! Пусть на пути будет меньше преград и больше возможностей!',
+		image: image5,
+	},
+	{
+		name: 'Решительности',
+		description:
+			'Иди всегда вперед и не тормози, смело открывай новые возможности для себя, расти и развивайся в интересных направлениях, меняй к лучшему свою жизнь, рискуй и выигрывай.',
+		image: image3,
+	},
+	{
+		name: 'Мечтай',
+		description:
+			'Желаю мечтать сколько угодно, и чтоб не треснула губа! Жить сладкой жизнью, и чтоб нигде ничего не слиплось! Желаю удовлетворять все желания веселых тараканов в твоей голове!',
 		image: image7,
 	},
 ];
 
 const MyCompliments = ({ setSelectedPage }: Props) => {
 	return (
-		<section id='mycompliments' className='w-full bg-primary-100 py-20'>
+		<section id='wish' className='w-full bg-primary-100 py-20'>
 			<motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Wish)}>
 				<motion.div
 					className='mx-auto w-5/6'
@@ -74,12 +76,13 @@ const MyCompliments = ({ setSelectedPage }: Props) => {
 						visible: { opacity: 1, x: 0 },
 					}}
 				>
-					<div className='md:w-5/6'>
-						<HText>My Wish</HText>
+					<HText>Пусть все будет так, как ты захочешь</HText>
+					<div className='md:w-3/4 text-justify'>
 						<p className='py-5'>
-							Dolore enim consequat est qui. Voluptate ullamco quis dolore
-							deserunt eu nostrud adipisicing nisi exercitation adipisicing amet
-							deserunt excepteur.
+							В этот особенный день пожеланий в твой адрес будет множество:
+							кто-то здоровья пожелает, кто-то — счастья, успехов, удачи, денег
+							и, конечно, любви. Пусть все исполнится! Пусть желанными будут
+							подарки и поздравления!
 						</p>
 					</div>
 				</motion.div>
