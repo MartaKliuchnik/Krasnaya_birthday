@@ -10,8 +10,6 @@ function App() {
 	const [selecledPage, setSelectedPage] = useState(SelectedPage.Home);
 	const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
 
-	console.log(selecledPage);
-
 	useEffect(() => {
 		const handleScroll = () => {
 			if (window.scrollY === 0) {

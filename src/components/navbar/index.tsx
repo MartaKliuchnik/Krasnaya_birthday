@@ -80,16 +80,19 @@ function Navbar({ isTopOfPage, selecledPage, setSelectedPage }: Props) {
 							page='Главная'
 							selecledPage={selecledPage}
 							setSelectedPage={setSelectedPage}
+							setIsMenuToggled={setIsMenuToggled}
 						/>
 						<Link
 							page='Награждение'
 							selecledPage={selecledPage}
 							setSelectedPage={setSelectedPage}
+							setIsMenuToggled={setIsMenuToggled}
 						/>
 						<Link
 							page='Пожелания'
 							selecledPage={selecledPage}
 							setSelectedPage={setSelectedPage}
+							setIsMenuToggled={setIsMenuToggled}
 						/>
 					</div>
 				</div>

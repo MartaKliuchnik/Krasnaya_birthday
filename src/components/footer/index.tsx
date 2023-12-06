@@ -28,7 +28,7 @@ const Footer = () => {
 					</div>
 				</div>
 
-				<div>
+				<div className='mt-16 md:mt-0'>
 					<p className='font-bold'>Сайт сделан с любовью ❤</p>
 					<p className='font-bold'>Но данные никак не защищены ☺️</p>
 				</div>
